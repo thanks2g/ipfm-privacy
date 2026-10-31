@@ -30,26 +30,58 @@
 <body>
 
 <h1>개인정보처리방침</h1>
-<p class="sub">In-Play FOOTBALL MANAGER (실시간 축구감독) · 시행일 2026년 8월 21일</p>
+<p class="sub">In-Play FOOTBALL MANAGER (실시간 축구감독) · IPFM SEA Cup (축구감독 동남아컵) · IPFM Europe (축구감독 유로대회)<br>
+  시행일 2026년 8월 21일 · 개정 2026년 10월 31일</p>
 
 <div class="note">
-  <strong>요약.</strong> 이 게임은 <strong>자체 서버를 운영하지 않으며, 개발자가 보관하는 이용자의 개인정보는 없습니다.</strong>
-  게임 진행 데이터는 이용자의 단말기에 저장되고, 이용자가 원할 때만 이용자 본인의 Google 계정
-  (Play 게임즈 저장 게임)에 백업됩니다. 이름·이메일·전화번호·주소·위치·연락처·사진에는
+  <strong>요약.</strong> 본 게임은 <strong>자체 서버를 운영하지 않으며, 개발자가 보관하는 정보는 멀티 대전을 이용할 때의
+  대전 정보뿐입니다</strong>(멀티 대전이 있는 게임에 한함, 아래 2-1). 게임 진행 데이터는 이용자의 단말기에 저장되고,
+  이용자가 원할 때만 이용자 본인의 Google 계정(Play 게임즈 저장 게임)에 백업됩니다. 이름·이메일·전화번호·주소·위치·연락처·사진에는
   접근하지 않습니다.
 </div>
 
 <h2>1. 총칙</h2>
 <p>
-  본 방침은 모바일 게임 <strong>In-Play FOOTBALL MANAGER</strong>(패키지명 <code>com.ilikeit.ipfm</code>,
-  이하 "본 게임")에 적용됩니다. 개발자(이하 "개발자")는 「개인정보 보호법」 및 「정보통신망 이용촉진 및
-  정보보호 등에 관한 법률」을 준수하며, 이용자의 개인정보를 보호하기 위해 본 방침을 수립·공개합니다.
+  본 방침은 개발자 ZUNOZ(이하 "개발자")가 제공하는 아래 모바일 게임(이하 각각 또는 통틀어 "본 게임")에 적용됩니다.
+  개발자는 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」을 준수하며, 이용자의 개인정보를 보호하기 위해
+  본 방침을 수립·공개합니다.
 </p>
+<table>
+  <tr><th>게임</th><th>패키지명</th><th>멀티 대전</th></tr>
+  <tr>
+    <td>In-Play FOOTBALL MANAGER (실시간 축구감독)</td>
+    <td><code>com.ilikeit.ipfm</code> (Google Play)<br><code>com.ilikeit.ipfm.onestore</code> (원스토어)</td>
+    <td>Google Play판에만 있음</td>
+  </tr>
+  <tr>
+    <td>IPFM SEA Cup (축구감독 동남아컵)</td>
+    <td><code>com.ilikeit.ipfmsea</code> (Google Play)</td>
+    <td>없음</td>
+  </tr>
+  <tr>
+    <td>IPFM Europe (축구감독 유로대회)</td>
+    <td><code>com.ilikeit.ecl</code> (Google Play)</td>
+    <td>있음</td>
+  </tr>
+</table>
+<p>게임이나 판(Google Play판, 원스토어판)에 따라 쓰는 서비스가 다른 경우 아래 표에 적용 대상을 적었습니다. 따로 적지 않은 항목은 모든 게임에 같습니다.</p>
 
 <h2>2. 수집하는 정보와 수집 방법</h2>
 
 <h3>2-1. 개발자가 직접 수집·보관하는 정보</h3>
-<p><strong>없습니다.</strong> 개발자는 별도의 서버를 운영하지 않으며, 이용자의 정보를 개발자의 시스템에 저장하지 않습니다.</p>
+<p><strong>멀티 대전을 이용하지 않으면 없습니다.</strong> 개발자는 별도의 서버를 운영하지 않습니다.</p>
+<p>
+  멀티 대전이 있는 게임(위 표)에서 이용자가 멀티 대전 화면에 들어가 Google Play 게임즈로 로그인하면, 대전에 필요한 아래 정보가
+  개발자가 관리하는 Google Firebase 프로젝트(Firebase Authentication, Cloud Firestore)에 저장되고, 감독 이름·클럽·등급·대전 결과는
+  다른 이용자의 대전 화면에도 표시됩니다. 멀티 대전 화면에 들어가지 않으면 아무것도 저장되지 않습니다.
+</p>
+<table>
+  <tr><th>항목</th><th>내용</th></tr>
+  <tr><td>대전용 계정 ID</td><td>Play 게임즈 로그인으로 만들어지는 Firebase 사용자 ID</td></tr>
+  <tr><td>대전 프로필</td><td>감독 이름(Play 게임즈 표시 이름), 감독 사진 번호, 클럽, 등급, 게임 버전</td></tr>
+  <tr><td>플레이북</td><td>이용자가 올린 선발 명단과 전술</td></tr>
+  <tr><td>대전 기록</td><td>상대 감독 이름과 경기 결과, 주간 리그 순위, 날짜별 판 수(광고 보상 판 포함)</td></tr>
+</table>
 
 <h3>2-2. 이용자의 단말기에만 저장되는 정보</h3>
 <table>
@@ -61,17 +93,35 @@
   </tr>
   <tr>
     <td>표시 이름</td>
-    <td>Google Play 게임즈 로그인 시 제공되는 게임용 표시 이름(닉네임). 화면 표시 목적으로만 사용하며 저장하지 않습니다.</td>
+    <td>Google Play 게임즈 로그인 시 제공되는 게임용 표시 이름(닉네임). 화면 표시 목적으로만 사용하며 저장하지 않습니다.
+        (멀티 대전을 이용하면 감독 이름으로 2-1에 저장됩니다.)</td>
     <td>메모리 (앱 종료 시 소멸)</td>
+  </tr>
+  <tr>
+    <td>광고 동의 정보<br>(Google Play판)</td>
+    <td>광고 동의가 필요한 지역에서 이용자가 고른 동의 여부와 선택 내용</td>
+    <td>단말기 내부 저장 영역 (앱 전용)</td>
   </tr>
 </table>
 
 <h3>2-3. 제3자 서비스가 수집하는 정보</h3>
-<p>본 게임은 아래 서비스를 이용하며, 해당 정보는 각 사업자가 직접 수집·처리합니다. 개발자는 이 정보를 열람하거나 보관하지 않습니다.</p>
+<p>본 게임은 아래 서비스를 이용하며, 해당 정보는 각 사업자가 직접 수집·처리합니다. 개발자는 이 정보를 개인 단위로 열람하거나 보관하지 않습니다(멀티 대전 정보는 2-1 참조).</p>
 <table>
   <tr><th>서비스</th><th>제공자</th><th>수집 항목</th><th>목적</th></tr>
   <tr>
-    <td>Unity Ads (광고)</td>
+    <td>Google AdMob (광고)<br>(Google Play판)</td>
+    <td>Google LLC</td>
+    <td>광고 식별자(Android 광고 ID), 앱 세트 ID, IP 주소, 기기 모델·OS 버전·언어·국가, 광고 노출·클릭 기록</td>
+    <td>광고 게재 및 빈도 조절, 부정 클릭 방지, 이용자가 동의한 경우 맞춤형 광고</td>
+  </tr>
+  <tr>
+    <td>Google 사용자 메시지 플랫폼(UMP, 광고 동의)<br>(Google Play판)</td>
+    <td>Google LLC</td>
+    <td>IP 주소로 판단한 지역, 광고 동의 여부와 선택 내용</td>
+    <td>유럽 등 동의가 필요한 지역에서 광고 동의를 받고, 이용자가 언제든 바꿀 수 있게 함</td>
+  </tr>
+  <tr>
+    <td>Unity Ads (광고)<br>(원스토어판)</td>
     <td>Unity Technologies</td>
     <td>광고 식별자(Android 광고 ID), 기기 모델·OS 버전·언어·국가, IP 주소, 광고 노출·클릭 기록</td>
     <td>광고 게재 및 빈도 조절, 부정 클릭 방지</td>
@@ -103,27 +153,48 @@
         오류 직전의 앱 로그</td>
     <td>비정상 종료·오류의 원인 파악 및 수정</td>
   </tr>
+  <tr>
+    <td>Firebase App Check<br>(부정 이용 방지)</td>
+    <td>Google LLC</td>
+    <td>앱·기기 무결성 확인 결과(Google Play에서 설치한 앱은 Play Integrity API 사용)</td>
+    <td>변조된 앱이나 자동화된 요청이 Firebase 서비스에 접근하지 못하게 함</td>
+  </tr>
+  <tr>
+    <td>Firebase Authentication · Cloud Firestore<br>(멀티 대전이 있는 게임 · 이용 시에만)</td>
+    <td>Google LLC</td>
+    <td>위 2-1의 정보</td>
+    <td>멀티 대전 로그인, 대전 프로필·플레이북·기록 저장</td>
+  </tr>
+  <tr>
+    <td>Google Play 인앱 리뷰<br>(Google Play판)</td>
+    <td>Google LLC</td>
+    <td>개발자에게 전달되는 정보 없음(평가 창과 작성 내용은 Google Play가 직접 처리)</td>
+    <td>시즌을 마친 뒤 게임 평가 요청 창 표시</td>
+  </tr>
 </table>
 
 <p>
-  <strong>Firebase는 익명으로만 사용합니다.</strong> 개발자는 Firebase에 이용자를 식별할 수 있는
-  값(<code>setUserId</code> 등)을 일절 전달하지 않으며, 위 두 서비스로 볼 수 있는 것은
+  <strong>Firebase 통계와 오류 보고는 익명으로만 사용합니다.</strong> 개발자는 Firebase Analytics와 Crashlytics에 이용자를 식별할 수 있는
+  값(<code>setUserId</code> 등)을 일절 전달하지 않으며, 두 서비스로 볼 수 있는 것은
   <strong>개인이 아니라 집계된 수치</strong>입니다. 앱 인스턴스 ID는 이용자가 앱을 삭제하면
-  소멸하고, 재설치하면 새로 발급됩니다.
+  소멸하고, 재설치하면 새로 발급됩니다. 멀티 대전용 Firebase 사용자 ID는 대전 정보를 저장하는 데만 쓰며 통계와 오류 보고에는 전달하지 않습니다.
 </p>
 
 <h3>2-4. 수집하지 않는 정보</h3>
 <p>
   본 게임은 <strong>이름, 이메일 주소, 전화번호, 주소, 생년월일, 위치정보, 연락처, 사진·미디어,
   통화 기록, 기기 저장소</strong>에 접근하거나 이를 수집하지 않습니다. 별도의 회원가입 절차도 없습니다.
+  카메라는 이용자가 편집 코드를 QR 코드로 가져올 때만 켜지며, 카메라 화면은 단말기 안에서 QR 코드를 읽는 데만 쓰고 저장하거나 전송하지 않습니다.
 </p>
 
 <h2>3. 이용 목적</h2>
 <ul>
   <li>게임 서비스 제공 및 진행 상황 저장·복원</li>
+  <li>멀티 대전 제공(대전 상대 찾기, 대전 기록과 순위) — 멀티 대전이 있는 게임에 한함</li>
   <li>익명 통계를 통한 이용 현황 파악 및 기능 개선</li>
   <li>비정상 종료·오류의 원인 파악 및 수정</li>
-  <li>광고 게재를 통한 무료 서비스 운영</li>
+  <li>광고 게재를 통한 무료 서비스 운영과 광고 동의 관리</li>
+  <li>변조된 앱 등을 통한 부정 이용 방지</li>
   <li>이용자가 선택한 경우에 한한 계정 연동 및 클라우드 백업</li>
 </ul>
 <p>개발자는 위 목적 외의 용도로 정보를 이용하지 않으며, 이용자에게 마케팅 메시지를 발송하지 않습니다.</p>
@@ -133,55 +204,66 @@
   <li><strong>단말기 저장 데이터</strong>: 앱을 삭제하면 함께 삭제됩니다.</li>
   <li><strong>클라우드 백업 데이터</strong>: 이용자 본인의 Google 계정에 보관되며, Play 게임즈 설정에서
       본 게임의 저장 게임을 삭제하면 즉시 삭제됩니다.</li>
+  <li><strong>멀티 대전 정보</strong>: 이용자가 게임 안에서 연동을 해제하면 즉시 삭제됩니다. 다른 이용자의 대전 기록에 남은
+      결과와 감독 이름, 개인을 식별할 수 없는 날짜별 판 수 통계는 이메일로 요청하면 30일 안에 삭제합니다
+      (<a href="delete-account.html">계정 삭제 안내</a>).</li>
   <li><strong>제3자 서비스 수집 정보</strong>: 각 사업자의 보유 기간 정책을 따릅니다(아래 8항의 링크 참조).</li>
 </ul>
-<p>개발자가 보관하는 정보가 없으므로, 개발자 측의 별도 파기 절차는 발생하지 않습니다.</p>
+<p>멀티 대전 정보는 삭제 즉시 Firebase에서 지워지며, 개발자는 이를 따로 복사해 두지 않습니다.</p>
 
 <h2>5. 제3자 제공 및 국외 이전</h2>
 <p>
   개발자는 이용자의 정보를 제3자에게 판매하거나 제공하지 않습니다. 다만 본 게임에 포함된 아래
-  서비스의 특성상, 해당 사업자가 정보를 직접 수집하며 이 과정에서 정보가 국외로 이전됩니다.
+  서비스의 특성상, 해당 사업자가 정보를 직접 수집하거나 보관하며 이 과정에서 정보가 국외로 이전됩니다.
 </p>
 <table>
   <tr><th>이전받는 자</th><th>이전 국가</th><th>이전 항목</th><th>이전 시점 및 방법</th></tr>
   <tr>
-    <td>Unity Technologies</td>
+    <td>Google LLC</td>
+    <td>미국 등 Google 데이터센터 소재국</td>
+    <td>광고 식별자, 기기·네트워크 정보, 광고 동의 정보(AdMob·UMP), 익명 통계·오류 보고·무결성 확인 결과(Firebase),
+        Play 게임즈 플레이어 ID, 표시 이름, 게임 저장 데이터, 멀티 대전 정보(2-1)</td>
+    <td>앱 실행 중과 광고 요청 시, 그리고 이용자가 로그인·백업·멀티 대전을 이용할 때 네트워크를 통해 전송</td>
+  </tr>
+  <tr>
+    <td>Unity Technologies<br>(원스토어판)</td>
     <td>미국 등 Unity 데이터센터 소재국</td>
     <td>광고 식별자, 기기·네트워크 정보</td>
     <td>광고 요청 시 네트워크를 통해 전송</td>
   </tr>
-  <tr>
-    <td>Google LLC</td>
-    <td>미국 등 Google 데이터센터 소재국</td>
-    <td>Play 게임즈 플레이어 ID, 표시 이름, 게임 저장 데이터</td>
-    <td>이용자가 로그인·백업을 실행할 때 전송</td>
-  </tr>
 </table>
-<p>이용자는 광고 식별자 재설정·맞춤형 광고 해제, Google 계정 연동 해제를 통해 위 이전을 제한할 수 있습니다.</p>
+<p>이용자는 광고 식별자 재설정·맞춤형 광고 해제, 광고 동의 변경, Google 계정 연동 해제를 통해 위 이전을 제한할 수 있습니다.</p>
 
 <h2>6. 접근권한 안내</h2>
-<p>본 게임은 다음 권한을 사용하며, <strong>이용자의 동의가 필요한 위험 권한(카메라·위치·저장소·연락처 등)은 사용하지 않습니다.</strong></p>
+<p>본 게임은 다음 권한을 사용합니다. <strong>이용자의 동의가 필요한 권한은 카메라 하나뿐이며, 필요할 때만 묻습니다.</strong>
+  위치·저장소·연락처 등 그 밖의 위험 권한은 사용하지 않습니다.</p>
 <table>
   <tr><th>구분</th><th>권한</th><th>사용 목적</th></tr>
   <tr>
-    <td rowspan="4">필수</td>
+    <td rowspan="5">필수</td>
     <td><code>INTERNET</code></td>
-    <td>광고 수신, 계정 연동, 클라우드 백업</td>
+    <td>광고 수신, 계정 연동, 클라우드 백업, 멀티 대전</td>
   </tr>
   <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>네트워크 연결 상태 확인</td></tr>
   <tr><td><code>WAKE_LOCK</code></td><td>경기 진행 중 화면 유지</td></tr>
-  <tr><td><code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code></td><td>광고 SDK 및 Google Play 서비스 구성 요소가 요구하는 권한</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>알림 진동</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>BIND_GET_INSTALL_REFERRER_SERVICE</code>, <code>READ_GSERVICES</code></td><td>광고 SDK, Firebase 및 Google Play 서비스 구성 요소가 요구하는 권한</td></tr>
   <tr>
     <td rowspan="2">광고</td>
-    <td><code>com.google.android.gms.permission.AD_ID</code></td>
+    <td><code>com.google.android.gms.permission.AD_ID</code>, <code>ACCESS_ADSERVICES_AD_ID</code></td>
     <td>광고 식별자 조회(맞춤형 광고 및 빈도 조절)</td>
   </tr>
   <tr>
     <td><code>ACCESS_ADSERVICES_TOPICS</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code></td>
     <td>Android 광고 서비스(Privacy Sandbox) 연동</td>
   </tr>
+  <tr>
+    <td>선택</td>
+    <td><code>CAMERA</code></td>
+    <td>이름·능력치 편집 코드를 QR 코드로 가져올 때만 요청합니다. 거부해도 코드를 붙여 넣어 가져올 수 있습니다.</td>
+  </tr>
 </table>
-<p>필수 권한은 서비스 제공에 반드시 필요하여 거부 시 게임 이용이 제한될 수 있습니다. 광고 관련 권한은 단말기 설정에서 광고 개인 최적화를 해제하여 그 영향을 제한할 수 있습니다.</p>
+<p>필수 권한은 서비스 제공에 반드시 필요하여 거부 시 게임 이용이 제한될 수 있습니다. 광고 관련 권한은 단말기 설정에서 광고 개인 최적화를 해제하여 그 영향을 제한할 수 있습니다. 권한 목록은 게임과 판에 따라 일부 다를 수 있습니다.</p>
 
 <h2>7. 만 14세 미만 아동</h2>
 <p>
@@ -193,10 +275,12 @@
 <h2>8. 이용자의 권리와 행사 방법</h2>
 <ul>
   <li><strong>맞춤형 광고 해제·광고 ID 재설정</strong>: 단말기 <em>설정 → Google → 광고</em>에서 설정할 수 있습니다.</li>
-  <li><strong>계정 연동 해제</strong>: 게임 내 <em>환경 설정 → 계정</em>에서 연동을 해제할 수 있습니다.</li>
+  <li><strong>광고 동의 변경</strong>(Google Play판): 동의가 필요한 지역에서는 게임 내 <em>환경 설정 → 광고 개인정보 설정</em>에서 언제든 바꿀 수 있습니다.</li>
+  <li><strong>계정 연동 해제</strong>: 게임 내 <em>환경 설정 → 계정</em>에서 연동을 해제할 수 있습니다. 해제하면 클라우드 백업과 멀티 대전 정보가 함께 삭제됩니다.</li>
   <li><strong>클라우드 백업 삭제</strong>: <em>Play 게임즈 앱 → 프로필 → 설정 → 게임 데이터 삭제</em>에서 본 게임의 저장 게임을 삭제할 수 있습니다.</li>
   <li><strong>단말기 데이터 삭제</strong>: 앱을 삭제하거나 <em>설정 → 애플리케이션 → 저장공간 → 데이터 삭제</em>를 실행하면 됩니다.</li>
-  <li><strong>열람·정정·삭제 요구</strong>: 개발자가 보관하는 정보가 없어 개발자에게 요구할 대상 정보는 없습니다.
+  <li><strong>열람·정정·삭제 요구</strong>: 개발자가 보관하는 정보는 멀티 대전 정보뿐이며, 아래 이메일로 열람·정정·삭제를 요구할 수 있습니다
+      (<a href="delete-account.html">계정 삭제 안내</a>).
       제3자 서비스가 수집한 정보에 대해서는 각 사업자의 방침에 따라 권리를 행사할 수 있습니다.
       (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 개인정보처리방침</a> ·
        <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>)</li>
@@ -204,7 +288,8 @@
 
 <h2>9. 안전성 확보 조치</h2>
 <ul>
-  <li>개발자가 개인정보를 보관하지 않아 유출 위험의 근원을 두지 않습니다.</li>
+  <li>개발자가 보관하는 정보를 멀티 대전에 필요한 최소한으로 제한합니다.</li>
+  <li>멀티 대전 정보는 로그인한 이용자 본인만 자기 정보를 쓰고 지울 수 있도록 Firebase 접근 규칙을 두고, App Check로 변조된 앱의 접근을 막습니다.</li>
   <li>네트워크 통신은 각 SDK가 제공하는 암호화 채널(HTTPS/TLS)을 통해 이루어집니다.</li>
   <li>클라우드 백업은 이용자 본인의 Google 계정 인증을 통해서만 접근됩니다.</li>
 </ul>
@@ -234,136 +319,208 @@
   다만 이용자 권리에 중대한 변경이 발생하는 경우에는 30일 전에 공지합니다.
 </p>
 <p><strong>시행일</strong>: 2026년 8월 21일 (최초 제정)</p>
+<p><strong>개정</strong>: 2026년 10월 31일 — 적용 게임 추가(IPFM SEA Cup, IPFM Europe, 원스토어판 패키지 명시),
+  Google AdMob·광고 동의(UMP)·Firebase App Check·멀티 대전 정보(Firebase Authentication, Cloud Firestore)·Google Play 인앱 리뷰 항목 추가,
+  Unity Ads를 원스토어판으로 한정, 카메라 권한(선택) 추가</p>
 
 
 <div class="en">
 <h1>Privacy Policy</h1>
-<p class="sub">In-Play FOOTBALL MANAGER · Effective 21 August 2026</p>
+<p class="sub">In-Play FOOTBALL MANAGER · IPFM SEA Cup · IPFM Europe<br>
+  Effective 21 August 2026 · Revised 31 October 2026</p>
 
 <div class="note">
-  <strong>In short.</strong> This game runs <strong>no server of its own, and the developer stores none of
-  your personal information.</strong> Game progress is saved on your device and, only if you choose,
-  backed up to your own Google account through Play Games Saved Games. The game does not access your
-  name, email address, phone number, address, location, contacts, photos or device storage.
+  <strong>In short.</strong> These games run <strong>no server of their own, and the only information the
+  developer keeps is your multiplayer data, if you use multiplayer</strong> (in the games that have it; see below).
+  Game progress is saved on your device and, only if you choose, backed up to your own Google account through
+  Play Games Saved Games. The games do not access your name, email address, phone number, address, location,
+  contacts, photos or device storage.
 </div>
 
-<h2>1. What is collected</h2>
+<h2>1. Which apps this covers</h2>
+<p>This policy applies to the following mobile games by the developer ZUNOZ.</p>
+<table>
+  <tr><th>Game</th><th>Package</th><th>Multiplayer</th></tr>
+  <tr><td>In-Play FOOTBALL MANAGER</td><td><code>com.ilikeit.ipfm</code> (Google Play)<br><code>com.ilikeit.ipfm.onestore</code> (ONE store)</td><td>Google Play version only</td></tr>
+  <tr><td>IPFM SEA Cup</td><td><code>com.ilikeit.ipfmsea</code> (Google Play)</td><td>None</td></tr>
+  <tr><td>IPFM Europe</td><td><code>com.ilikeit.ecl</code> (Google Play)</td><td>Yes</td></tr>
+</table>
+<p>Where a service is used only by some games or versions, the table below says so. Everything else applies to all of them.</p>
+
+<h2>2. What is collected</h2>
 <p>
-  <strong>By the developer: nothing.</strong> There is no account registration and no developer-operated server.
+  <strong>By the developer: nothing, unless you use multiplayer.</strong> There is no account registration and no
+  developer-operated server. In the games that have multiplayer, entering the multiplayer screen and signing in with
+  Google Play Games stores the following in the developer's Google Firebase project (Firebase Authentication and
+  Cloud Firestore): a Firebase user ID created from your Play Games sign-in; your multiplayer profile (manager name,
+  which is your Play Games display name, portrait number, club, rating and game version); the playbook you upload
+  (line-up and tactics); and your match records (opponents' manager names and results, weekly league standings, and
+  daily match counts including ad-bonus matches). Your manager name, club, rating and results are shown to other
+  players in multiplayer. Nothing is stored if you never open the multiplayer screen.
 </p>
-<p><strong>On your device only:</strong> career progress, squad and tactics, match records and settings.
-  If you sign in with Google Play Games, your Play Games display name is shown in the interface for the
-  duration of the session; it is not stored.</p>
-<p><strong>By third-party services included in the game:</strong></p>
-<p>Firebase is used <strong>anonymously only</strong>: this game never passes it a user identifier
-(no <code>setUserId</code>), so what it shows the developer is aggregate numbers, not people.</p>
+<p><strong>On your device only:</strong> career progress, squad and tactics, match records and settings, and, in the
+  Google Play versions, your ad consent choices. If you sign in with Google Play Games, your Play Games display name
+  is shown in the interface for the duration of the session; it is not stored on the device.</p>
+<p><strong>By third-party services included in the games:</strong></p>
+<p>Firebase Analytics and Crashlytics are used <strong>anonymously only</strong>: the games never pass them a user
+identifier (no <code>setUserId</code>), so what they show the developer is aggregate numbers, not people. The
+multiplayer Firebase user ID is used only to store multiplayer data and is never passed to analytics or crash reports.</p>
 <table>
   <tr><th>Service</th><th>Provider</th><th>Data</th><th>Purpose</th></tr>
-  <tr><td>Unity Ads</td><td>Unity Technologies</td><td>Advertising ID, device model, OS version, language, country, IP address, ad impression and click events</td><td>Serving ads, frequency capping, fraud prevention</td></tr>
+  <tr><td>Google AdMob (Google Play versions)</td><td>Google LLC</td><td>Advertising ID, app set ID, IP address, device model, OS version, language, country, ad impression and click events</td><td>Serving ads, frequency capping, fraud prevention, and personalised ads where you consent</td></tr>
+  <tr><td>Google User Messaging Platform (UMP, ad consent; Google Play versions)</td><td>Google LLC</td><td>Region inferred from IP address, your consent choices</td><td>Asking for ad consent where required (for example in Europe) and letting you change it at any time</td></tr>
+  <tr><td>Unity Ads (ONE store version)</td><td>Unity Technologies</td><td>Advertising ID, device model, OS version, language, country, IP address, ad impression and click events</td><td>Serving ads, frequency capping, fraud prevention</td></tr>
   <tr><td>Google Play Games Services (optional)</td><td>Google LLC</td><td>Play Games player ID, display name</td><td>Sign-in, cloud save and restore</td></tr>
+  <tr><td>Play Games Saved Games (optional)</td><td>Google LLC</td><td>Your game save data</td><td>Restoring progress after reinstall or device change</td></tr>
   <tr><td>Firebase Analytics</td><td>Google LLC</td><td>App-instance ID (anonymous, created on install and gone when the app is uninstalled), Advertising ID, device model, OS version, language, country, session and screen events</td><td>Understanding how many people play and how, to prioritise improvements</td></tr>
   <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>App-instance ID, device model, OS version, crash time, stack traces and the app log leading up to a crash</td><td>Finding and fixing crashes</td></tr>
-  <tr><td>Play Games Saved Games (optional)</td><td>Google LLC</td><td>Your game save data</td><td>Restoring progress after reinstall or device change</td></tr>
+  <tr><td>Firebase App Check</td><td>Google LLC</td><td>App and device integrity results (Play Integrity API for apps installed from Google Play)</td><td>Keeping modified apps and automated requests away from Firebase services</td></tr>
+  <tr><td>Firebase Authentication and Cloud Firestore (games with multiplayer, only if you use it)</td><td>Google LLC</td><td>The multiplayer data described above</td><td>Multiplayer sign-in; storing your profile, playbook and records</td></tr>
+  <tr><td>Google Play In-App Review (Google Play versions)</td><td>Google LLC</td><td>Nothing is passed to the developer; the review window and your review are handled by Google Play</td><td>Asking for a rating after a season</td></tr>
 </table>
+<p>The camera is switched on only when you choose to import an edit code by QR code. The camera image is used on the
+device to read the QR code and is never stored or sent.</p>
 
-<h2>2. Retention</h2>
+<h2>3. Retention</h2>
 <p>Device data is removed when you uninstall the game. Cloud backups live in your own Google account and
-are removed when you delete this game's saved data in the Play Games app. Third-party providers retain
-data according to their own policies.</p>
+are removed when you delete this game's saved data in the Play Games app. Multiplayer data is deleted immediately
+when you unlink your account in the game; results and your manager name left in other players' records, and daily
+match-count statistics that do not identify you, are deleted within 30 days of an email request
+(<a href="delete-account.html">Account deletion</a>). Third-party providers retain data according to their own policies.</p>
 
-<h2>3. Sharing and international transfer</h2>
-<p>The developer does not sell or share your information. The services listed above collect data directly
+<h2>4. Sharing and international transfer</h2>
+<p>The developer does not sell or share your information. The services listed above collect or store data directly
 and process it on servers outside the Republic of Korea, including the United States. You can limit this
-by resetting or opting out of your advertising ID and by disconnecting your Google account in the game's
-settings.</p>
+by resetting or opting out of your advertising ID, changing your ad consent, and disconnecting your Google account in
+the game's settings.</p>
 
-<h2>4. Permissions</h2>
-<p>The game requests <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>,
-<code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>AD_ID</code>,
-<code>ACCESS_ADSERVICES_TOPICS</code> and <code>ACCESS_ADSERVICES_ATTRIBUTION</code>.
-<strong>No runtime-sensitive permissions</strong> (camera, location, storage, contacts) are requested.</p>
+<h2>5. Permissions</h2>
+<p>The games request <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>, <code>VIBRATE</code>,
+<code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>BIND_GET_INSTALL_REFERRER_SERVICE</code>,
+<code>READ_GSERVICES</code>, <code>AD_ID</code>, <code>ACCESS_ADSERVICES_AD_ID</code>,
+<code>ACCESS_ADSERVICES_TOPICS</code> and <code>ACCESS_ADSERVICES_ATTRIBUTION</code>; the exact list can differ slightly
+between games and versions. The only runtime permission is <strong><code>CAMERA</code>, which is optional</strong> and
+asked for only when you import an edit code by QR code; you can paste the code instead. No other runtime-sensitive
+permissions (location, storage, contacts) are requested.</p>
 
-<h2>5. Children</h2>
-<p>The game is not directed at children under 14 and does not knowingly collect their personal
+<h2>6. Children</h2>
+<p>The games are not directed at children under 14 and do not knowingly collect their personal
 information. If you believe a child has provided information without parental consent, please contact us
 at the address below.</p>
 
-<h2>6. Your choices</h2>
+<h2>7. Your choices</h2>
 <ul>
   <li>Reset or opt out of your advertising ID: device <em>Settings → Google → Ads</em>.</li>
-  <li>Disconnect your account: in-game <em>Settings → Account</em>.</li>
+  <li>Change your ad consent (Google Play versions, where consent is required): in-game <em>Settings → Ad privacy settings</em>.</li>
+  <li>Disconnect your account: in-game <em>Settings → Account</em>. This also deletes your cloud backup and multiplayer data.</li>
   <li>Delete cloud saves: <em>Play Games app → Profile → Settings → Delete game data</em>.</li>
   <li>Delete local data: uninstall the game, or clear its app data.</li>
+  <li>Access, correct or delete the multiplayer data the developer keeps: email the address below
+      (<a href="delete-account.html">Account deletion</a>).</li>
 </ul>
 
-<h2>7. Contact</h2>
+<h2>8. Contact</h2>
 <p>Data protection officer: ZUNOZ — Email: juno.lab77@gmail.com</p>
 
-<h2>8. Changes</h2>
+<h2>9. Changes</h2>
 <p>Any change to this policy will be posted on this page at least 7 days before it takes effect, or 30
 days in advance where the change materially affects your rights.</p>
+<p>Revised 31 October 2026: added IPFM SEA Cup, IPFM Europe and the ONE store package; added Google AdMob, ad consent
+(UMP), Firebase App Check, multiplayer data (Firebase Authentication, Cloud Firestore) and Google Play In-App Review;
+limited Unity Ads to the ONE store version; added the optional camera permission.</p>
 </div>
 
 <div class="zh" lang="zh-Hant">
 <h1>隱私權政策</h1>
-<p class="sub">In-Play FOOTBALL MANAGER · 生效日 2026 年 8 月 21 日</p>
+<p class="sub">In-Play FOOTBALL MANAGER（即時足球總教練）· IPFM SEA Cup（足球總教練 東南亞盃）· IPFM Europe（足球總教練 歐洲盃）<br>
+  生效日 2026 年 8 月 21 日 · 修訂 2026 年 10 月 31 日</p>
 
 <div class="note">
-  <strong>簡要說明。</strong>本遊戲<strong>沒有自己的伺服器，開發者不會儲存您的任何個人資料。</strong>
-  遊戲進度儲存在您的裝置上；只有在您自行選擇時，才會透過 Play Games 遊戲存檔備份到您自己的 Google 帳號。
+  <strong>簡要說明。</strong>本遊戲<strong>沒有自己的伺服器；開發者保存的資料，只有您使用多人對戰時的對戰資料</strong>
+  （僅限有多人對戰的遊戲，見下方）。遊戲進度儲存在您的裝置上；只有在您自行選擇時，才會透過 Play Games 遊戲存檔備份到您自己的 Google 帳號。
   本遊戲不會存取您的姓名、電子郵件地址、電話號碼、住址、位置、通訊錄、相片或裝置儲存空間。
 </div>
 
-<h2>1. 蒐集的資料</h2>
+<h2>1. 適用的應用程式</h2>
+<p>本政策適用於開發者 ZUNOZ 提供的下列行動遊戲。</p>
+<table>
+  <tr><th>遊戲</th><th>套件名稱</th><th>多人對戰</th></tr>
+  <tr><td>In-Play FOOTBALL MANAGER（即時足球總教練）</td><td><code>com.ilikeit.ipfm</code>（Google Play）<br><code>com.ilikeit.ipfm.onestore</code>（ONE store）</td><td>僅 Google Play 版</td></tr>
+  <tr><td>IPFM SEA Cup（足球總教練 東南亞盃）</td><td><code>com.ilikeit.ipfmsea</code>（Google Play）</td><td>無</td></tr>
+  <tr><td>IPFM Europe（足球總教練 歐洲盃）</td><td><code>com.ilikeit.ecl</code>（Google Play）</td><td>有</td></tr>
+</table>
+<p>只有部分遊戲或版本使用的服務，會在下表註明；未註明的項目適用於所有遊戲。</p>
+
+<h2>2. 蒐集的資料</h2>
 <p>
-  <strong>開發者蒐集：無。</strong>本遊戲沒有帳號註冊程序，也沒有開發者營運的伺服器。
+  <strong>開發者蒐集：除非您使用多人對戰，否則無。</strong>本遊戲沒有帳號註冊程序，也沒有開發者營運的伺服器。
+  在有多人對戰的遊戲中，當您進入多人對戰畫面並以 Google Play Games 登入，下列資料會儲存在開發者的 Google Firebase 專案
+  （Firebase Authentication、Cloud Firestore）：以 Play Games 登入建立的 Firebase 使用者 ID；多人對戰個人資料
+  （教練名稱，即您的 Play Games 顯示名稱、教練照片編號、球隊、等級、遊戲版本）；您上傳的戰術手冊（先發名單與戰術）；
+  以及對戰紀錄（對手教練名稱與結果、每週聯賽排名、每日對戰場數，含廣告獎勵場次）。您的教練名稱、球隊、等級與對戰結果會顯示給其他玩家。
+  若您從未開啟多人對戰畫面，則不會儲存任何資料。
 </p>
-<p><strong>僅儲存在您的裝置上：</strong>生涯進度、陣容與戰術、比賽紀錄與各項設定。
-  若您使用 Google Play Games 登入，您的 Play Games 顯示名稱會在該次遊玩期間顯示於畫面上，並不會被儲存。</p>
+<p><strong>僅儲存在您的裝置上：</strong>生涯進度、陣容與戰術、比賽紀錄與各項設定，以及 Google Play 版中您的廣告同意選擇。
+  若您使用 Google Play Games 登入，您的 Play Games 顯示名稱會在該次遊玩期間顯示於畫面上，並不會儲存在裝置上。</p>
 <p><strong>由遊戲內含的第三方服務蒐集：</strong></p>
-<p>Firebase <strong>僅以匿名方式</strong>使用：本遊戲從未傳送任何使用者識別碼給它
-（未呼叫 <code>setUserId</code>），因此開發者看到的是彙總數字，而不是個別使用者。</p>
+<p>Firebase Analytics 與 Crashlytics <strong>僅以匿名方式</strong>使用：本遊戲從未傳送任何使用者識別碼給它們
+（未呼叫 <code>setUserId</code>），因此開發者看到的是彙總數字，而不是個別使用者。多人對戰用的 Firebase 使用者 ID
+只用來儲存對戰資料，不會傳給分析或當機回報。</p>
 <table>
   <tr><th>服務</th><th>提供者</th><th>資料</th><th>目的</th></tr>
-  <tr><td>Unity Ads</td><td>Unity Technologies</td><td>廣告 ID、裝置型號、作業系統版本、語言、國家／地區、IP 位址、廣告曝光與點擊事件</td><td>投放廣告、頻率控管、防範詐欺</td></tr>
+  <tr><td>Google AdMob（Google Play 版）</td><td>Google LLC</td><td>廣告 ID、應用程式集 ID、IP 位址、裝置型號、作業系統版本、語言、國家／地區、廣告曝光與點擊事件</td><td>投放廣告、頻率控管、防範詐欺，以及在您同意時提供個人化廣告</td></tr>
+  <tr><td>Google 使用者訊息平台（UMP，廣告同意；Google Play 版）</td><td>Google LLC</td><td>依 IP 位址判斷的地區、您的同意選擇</td><td>在需要同意的地區（例如歐洲）取得廣告同意，並讓您隨時變更</td></tr>
+  <tr><td>Unity Ads（ONE store 版）</td><td>Unity Technologies</td><td>廣告 ID、裝置型號、作業系統版本、語言、國家／地區、IP 位址、廣告曝光與點擊事件</td><td>投放廣告、頻率控管、防範詐欺</td></tr>
   <tr><td>Google Play 遊戲服務（選用）</td><td>Google LLC</td><td>Play Games 玩家 ID、顯示名稱</td><td>登入、雲端備份與還原</td></tr>
+  <tr><td>Play Games 遊戲存檔（選用）</td><td>Google LLC</td><td>您的遊戲存檔資料</td><td>重新安裝或更換裝置後還原進度</td></tr>
   <tr><td>Firebase Analytics</td><td>Google LLC</td><td>應用程式執行個體 ID（匿名，安裝時建立、解除安裝即消失）、廣告 ID、裝置型號、作業系統版本、語言、國家／地區、工作階段與畫面事件</td><td>了解有多少人在玩、如何玩，以決定改善的優先順序</td></tr>
   <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>應用程式執行個體 ID、裝置型號、作業系統版本、當機時間、堆疊追蹤，以及當機前的應用程式紀錄</td><td>找出並修正當機問題</td></tr>
-  <tr><td>Play Games 遊戲存檔（選用）</td><td>Google LLC</td><td>您的遊戲存檔資料</td><td>重新安裝或更換裝置後還原進度</td></tr>
+  <tr><td>Firebase App Check</td><td>Google LLC</td><td>應用程式與裝置完整性檢查結果（從 Google Play 安裝的應用程式使用 Play Integrity API）</td><td>防止遭竄改的應用程式或自動化請求存取 Firebase 服務</td></tr>
+  <tr><td>Firebase Authentication 與 Cloud Firestore（有多人對戰的遊戲，僅在使用時）</td><td>Google LLC</td><td>上述多人對戰資料</td><td>多人對戰登入，儲存個人資料、戰術手冊與紀錄</td></tr>
+  <tr><td>Google Play 應用程式內評論（Google Play 版）</td><td>Google LLC</td><td>不會傳送任何資料給開發者；評論視窗與您的評論由 Google Play 處理</td><td>在賽季結束後請您評分</td></tr>
 </table>
+<p>只有在您選擇以 QR 碼匯入編輯代碼時才會開啟相機。相機畫面只在裝置上用來讀取 QR 碼，不會儲存或傳送。</p>
 
-<h2>2. 保存期間</h2>
+<h2>3. 保存期間</h2>
 <p>裝置上的資料會在您解除安裝遊戲時一併移除。雲端備份存放於您自己的 Google 帳號中，
-當您在 Play Games 應用程式中刪除本遊戲的存檔資料時即會移除。第三方服務提供者則依其自身政策保存資料。</p>
+當您在 Play Games 應用程式中刪除本遊戲的存檔資料時即會移除。您在遊戲中解除帳號連結時，多人對戰資料會立即刪除；
+其他玩家對戰紀錄中留下的結果與教練名稱，以及無法識別個人的每日場數統計，會在收到電子郵件申請後 30 天內刪除
+（<a href="delete-account.html">帳號刪除說明</a>）。第三方服務提供者則依其自身政策保存資料。</p>
 
-<h2>3. 資料分享與國際傳輸</h2>
-<p>開發者不會出售或分享您的資料。上述服務會直接蒐集資料，並在大韓民國境外（包括美國）的伺服器上處理。
-您可以透過重設或停用您的廣告 ID，以及在遊戲設定中解除 Google 帳號連結，來限制這些蒐集。</p>
+<h2>4. 資料分享與國際傳輸</h2>
+<p>開發者不會出售或分享您的資料。上述服務會直接蒐集或儲存資料，並在大韓民國境外（包括美國）的伺服器上處理。
+您可以透過重設或停用您的廣告 ID、變更廣告同意，以及在遊戲設定中解除 Google 帳號連結，來限制這些蒐集。</p>
 
-<h2>4. 權限</h2>
-<p>本遊戲要求 INTERNET、ACCESS_NETWORK_STATE、WAKE_LOCK、
-FOREGROUND_SERVICE、RECEIVE_BOOT_COMPLETED、AD_ID、
-ACCESS_ADSERVICES_TOPICS 與 ACCESS_ADSERVICES_ATTRIBUTION 權限。
-本遊戲不要求任何執行階段的敏感權限（相機、位置、儲存空間、通訊錄）。</p>
+<h2>5. 權限</h2>
+<p>本遊戲要求 INTERNET、ACCESS_NETWORK_STATE、WAKE_LOCK、VIBRATE、
+FOREGROUND_SERVICE、RECEIVE_BOOT_COMPLETED、BIND_GET_INSTALL_REFERRER_SERVICE、READ_GSERVICES、AD_ID、
+ACCESS_ADSERVICES_AD_ID、ACCESS_ADSERVICES_TOPICS 與 ACCESS_ADSERVICES_ATTRIBUTION 權限，實際清單可能因遊戲與版本略有不同。
+唯一的執行階段權限是<strong>選用的 CAMERA（相機）</strong>，只在您以 QR 碼匯入編輯代碼時詢問；您也可以改為貼上代碼。
+本遊戲不要求其他執行階段的敏感權限（位置、儲存空間、通訊錄）。</p>
 
-<h2>5. 兒童</h2>
+<h2>6. 兒童</h2>
 <p>本遊戲並非以未滿 14 歲的兒童為對象，也不會在知情的情況下蒐集其個人資料。
 若您認為有兒童未經家長同意而提供了資料，請透過下方聯絡方式與我們聯繫。</p>
 
-<h2>6. 您的選擇</h2>
+<h2>7. 您的選擇</h2>
 <ul>
   <li>重設或停用廣告 ID：裝置<em>設定 → Google → 廣告</em>。</li>
-  <li>解除帳號連結：遊戲內<em>設定 → 帳號</em>。</li>
+  <li>變更廣告同意（Google Play 版，在需要同意的地區）：遊戲內<em>設定 → 廣告隱私設定</em>。</li>
+  <li>解除帳號連結：遊戲內<em>設定 → 帳號</em>。雲端備份與多人對戰資料也會一併刪除。</li>
   <li>刪除雲端存檔：<em>Play Games 應用程式 → 個人資料 → 設定 → 刪除遊戲資料</em>。</li>
   <li>刪除本機資料：解除安裝遊戲，或清除其應用程式資料。</li>
+  <li>查閱、更正或刪除開發者保存的多人對戰資料：寄信至下方電子郵件（<a href="delete-account.html">帳號刪除說明</a>）。</li>
 </ul>
 
-<h2>7. 聯絡方式</h2>
+<h2>8. 聯絡方式</h2>
 <p>個人資料保護負責人：ZUNOZ — 電子郵件：juno.lab77@gmail.com</p>
 
-<h2>8. 政策變更</h2>
+<h2>9. 政策變更</h2>
 <p>本政策如有變更，將於生效日至少 7 天前公告於本頁面；
 若變更對您的權利有重大影響，則於 30 天前公告。</p>
+<p>2026 年 10 月 31 日修訂：新增 IPFM SEA Cup、IPFM Europe 與 ONE store 版套件；新增 Google AdMob、廣告同意（UMP）、
+Firebase App Check、多人對戰資料（Firebase Authentication、Cloud Firestore）與 Google Play 應用程式內評論；
+Unity Ads 限於 ONE store 版；新增選用的相機權限。</p>
 </div>
 
 </body>
